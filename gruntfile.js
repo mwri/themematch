@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 			es5: {
 				options: {
 					files: [
-						'node_modules/csscolorparser/csscolorparser.js',
+						'node_modules/csscolorparser-browser/csscolorparser.js',
 						'dist/themematch.js',
 						'test/*.js',
 					],
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
 			es6: {
 				options: {
 					files: [
-						'node_modules/csscolorparser/csscolorparser.js',
+						'node_modules/csscolorparser-browser/csscolorparser.js',
 						'dist/themematch.js',
 						'test/*.js',
 					],
@@ -96,7 +96,7 @@ module.exports = function(grunt) {
 			travis_ci_es5: {
 				options: {
 					files: [
-						'node_modules/csscolorparser/csscolorparser.js',
+						'node_modules/csscolorparser-browser/csscolorparser.js',
 						'dist/themematch.js',
 						'test/*.js',
 					],
@@ -122,7 +122,7 @@ module.exports = function(grunt) {
 			travis_ci_es6: {
 				options: {
 					files: [
-						'node_modules/csscolorparser/csscolorparser.js',
+						'node_modules/csscolorparser-browser/csscolorparser.js',
 						'dist/themematch.js',
 						'test/*.js',
 					],

@@ -43,7 +43,7 @@
     "test": "test"
   },
   "dependencies": {
-    "csscolorparser": "^1.0.3"
+    "csscolorparser-browser": "^1.0.3"
   },
   "repository": {
     "type": "git",
