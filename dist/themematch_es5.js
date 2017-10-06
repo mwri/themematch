@@ -1,6 +1,6 @@
 'use strict';
 
-// Package: themematch v1.0.0 (built 2017-09-18 12:00:39)
+// Package: themematch v1.0.0 (built 2017-10-06 15:41:40)
 // Copyright: (C) 2017 Michael Wright <mjw@methodanalysis.com>
 // License: MIT
 
@@ -11,7 +11,7 @@
 
 	var csscolorparser = void 0;
 	if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-		csscolorparser = require('csscolorparser');
+		csscolorparser = require('csscolorparser-browser');
 	} else {
 		csscolorparser = window.csscolorparser;
 	}
