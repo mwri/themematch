@@ -1,6 +1,9 @@
-// Package: themematch v1.0.2 (built 2017-10-06 16:36:23)
+// Package: themematch v1.0.3 (built 2017-10-07 16:58:54)
 // Copyright: (C) 2017 Michael Wright <mjw@methodanalysis.com>
 // License: MIT
+
+
+var parseCSSColor = parseCSSColor;
 
 
 (function () {
@@ -9,13 +12,10 @@
 'use strict';
 
 
-let csscolorparser;
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-	csscolorparser = require('csscolorparser-browser');
-} else {
-	csscolorparser = window.csscolorparser;
+	let csscolorparser = require('csscolorparser');
+	parseCSSColor = csscolorparser.parseCSSColor;
 }
-let parseCSSColor = csscolorparser.parseCSSColor;
 
 
 let themematch = (function() {
