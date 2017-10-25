@@ -1,6 +1,6 @@
 'use strict';
 
-// Package: themematch v1.0.3 (built 2017-10-07 16:58:54)
+// Package: themematch v1.0.4 (built 2017-10-25 16:17:14)
 // Copyright: (C) 2017 Michael Wright <mjw@methodanalysis.com>
 // License: MIT
 
