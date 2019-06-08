@@ -32,18 +32,6 @@ uses ThemeMatch to provide a complete solution for managing plugins
 CSS choices and dynamically switching themes, loading and unloading CSS for
 the core and all plugins for you.
 
-## NodeJS and browser compatibility
-
-ThemeMatch works with both NodeJS and the browser natively, for NodeJS
-require the package like this:
-
-```javascript
-let themematch = require('themematch');
-```
-
-In the browser, loading an appropriate 'dist' file will add `themematch`
-to window.
-
 ## Worked example
 
 In order to work, ThemeMatch must know about the themes available, this
@@ -238,11 +226,3 @@ File | Description
 themematch.js | Limited ES6 features (works with Node.js v4+ and most browsers)
 themematch_es5.js | ES5 translation (should work with anything)
 themematch_es5.min.js | Minified ES5 translation
-
-## Build
-
-run `npm install` to install the dev/build dependencies, and
-`grunt build` to build.
-
-This will create ES5 `dist/themematch.js` and `dist/themematch.min.js`
-files, and run the unit tests against them.

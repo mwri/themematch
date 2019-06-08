@@ -6,7 +6,7 @@
 
 let themematch;
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-	themematch = require('./../dist/themematch.js');
+	themematch = require('./../lib/themematch.js');
 	require('chai-jasmine');
 } else {
 	themematch = window.themematch;

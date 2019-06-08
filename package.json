@@ -8,34 +8,28 @@
   },
   "description": "themematch, matches themes based on background and foreground contrast",
   "devDependencies": {
-    "babel-preset-es2015": "^6.24.1",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
     "chai-jasmine": "^1.0.7",
-    "coveralls": "^2.13.1",
-    "grunt": "^1.0.1",
-    "grunt-babel": "^6.0.0",
+    "coveralls": "^3.0.4",
+    "grunt": "^1.0.4",
     "grunt-cli": "^1.2.0",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-uglify": "^3.0.1",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-karma": "^2.0.0",
-    "grunt-lcov-merge": "^1.2.3",
-    "grunt-mocha-istanbul": "^5.0.2",
-    "grunt-simple-mocha": "^0.4.1",
-    "grunt-strip-code": "^1.0.6",
-    "karma": "^1.7.0",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-coverage": "^1.1.1",
-    "karma-jasmine": "^1.1.0",
-    "karma-spec-reporter": "0.0.31",
-    "load-grunt-tasks": "^3.5.2"
+    "grunt-git": "^1.0.13",
+    "load-grunt-tasks": "^3.5.2",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
   },
   "url": "https://github.com/mwri/theme-match",
   "os": [
     "linux"
   ],
   "scripts": {
-    "test": "grunt test"
+    "prepublishOnly": "./node_modules/grunt-cli/bin/grunt prepublish",
+    "test": "./node_modules/.bin/mocha --timeout 4000 --require @babel/register",
+    "coverage": "./node_modules/.bin/nyc --reporter=html --reporter=text --reporter=lcov ./node_modules/.bin/mocha --timeout 4000 --require @babel/register"
   },
   "main": "dist/themematch.js",
   "directories": {
