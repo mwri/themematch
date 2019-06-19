@@ -17,7 +17,7 @@
     "coveralls": "^3.0.4",
     "grunt": "^1.0.4",
     "grunt-cli": "^1.2.0",
-    "grunt-git": "^1.0.13",
+    "grunt-git": "^1.0.14",
     "load-grunt-tasks": "^3.5.2",
     "mocha": "^6.1.4",
     "nyc": "^14.1.1"
