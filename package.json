@@ -19,7 +19,7 @@
     "grunt-cli": "^1.2.0",
     "grunt-git": "^1.0.14",
     "load-grunt-tasks": "^3.5.2",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "nyc": "^14.1.1"
   },
   "url": "https://github.com/mwri/theme-match",
